@@ -2,7 +2,7 @@
 # Contact Manager
 Long Description about project. This project do that. This project is awesome...
 ## Team members
-1. Christo Kurian Tomy [Embed personal github URL]
+1. Christo Kurian Tomy [Embed personal github URL ([https://github.com/vaishakhsnair])]
 2. [Vaishakh S Nair]([https://github.com/vaishakhsnair])
 3. Varun Haridas
 ## Team Id
