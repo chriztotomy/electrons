@@ -4,7 +4,7 @@ Long Description about project. This project do that. This project is awesome...
 ## Team members
 1. [Christo Kurian Tomy](https://github.com/chriztotomy)
 2. [Vaishakh S Nair](https://github.com/vaishakhsnair)
-3. Varun Haridas
+3. [Varun Haridas](https://github.com/VARUN1128)
 ## Team Id
 electrons
 ## Link to product walkthrough
