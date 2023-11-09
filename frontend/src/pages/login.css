@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+
+body{
+    color: #FFF;    
+
+}
+.login {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, #7005b2 0%, #000851 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+.InnerBox {
+
+    height: 80%;
+    width: 30%;
+    overflow: hidden;
+    border-radius: 1rem;
+
+    background: rgba(129, 143, 180, 0.25);
+    flex-shrink: 0;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.titleText {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    justify-self: flex-start;
+    margin: 40px;
+}
+
+.InputBoxes {
+    height: 15%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputTitle{
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    line-height: normal;
+    align-self: flex-start  ;
+
+}
+
+input{
+    border-radius: 2px;
+    height: 45%;
+    color: black;
+    background-color: #FFF;
+    padding: 5px;
+}
+
+.styledBt {
+    width:25%;
+    height: 8%;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 400;
+    border-radius: 5px;
+    color: black;
+    background-color: #d3d8db;
+    margin-top: 10px;
+    
+}
+
+.unstyledBt{
+    margin-bottom: 20px;
+}
