@@ -1,0 +1,150 @@
+.HomeContainer {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border:2px solid green;
+    background: linear-gradient(90deg, #7005b2 0%, #000851 100%);
+    
+}
+
+.HomeContent {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+
+}
+
+.LeftSide {
+    height: 100vh;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+
+    justify-content:flex-start;
+    border:2px solid red;
+    margin-right: 2vw;
+}
+
+.RightSide {
+    height: 100vh;
+    width: 68vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border:2px solid blue;
+}
+
+
+/* set SideButton styles */
+.SideButton {
+    height: 6vh;
+    width: 15vw;
+    border-radius: 10px;
+    border: none;
+    background-color: #31077c;  /*change the color scheme*/
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 2vh;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    margin-top: 4%;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+.tag {
+    background-color: #1e0549;
+    height:7vh;
+    width: 10vw;
+    color: white;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.tag:hover {
+    background-color: #7005b2;
+}
+
+
+.Branding {
+    height: 30vh;
+    width: 15vw;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 20%;
+    
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 10%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown  {
+    height: 6vh;
+    width: 15vw;
+    border-radius: 10px;
+    border: none;
+    background-color: #31077c;  /*change the color scheme*/
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 2vh;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+
+.crossbt {
+    margin: 10px;
+}

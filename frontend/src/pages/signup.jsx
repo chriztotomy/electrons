@@ -1,14 +1,20 @@
 
 import React, { useState } from "react";
 import "./login.css";
+import { createClient } from '@supabase/supabase-js'
+
+const supabase = createClient('https://nutlagdufpfpezhovzqy.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im51dGxhZ2R1ZnBmcGV6aG92enF5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTk2MjQ2MTYsImV4cCI6MjAxNTIwMDYxNn0.ORhkozAiS7rfmuqgvyCOTREFwYTydOwQBolszpSg3ss')
 const SignUp = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleLogin = (e) => {
-    e.preventDefault();
-    // handle login logic here
+  const handleSignup = async (e) => {
+    const { data, error } = await supabase.auth.signUp({
+      email: email,
+      password: password,
+    })
+    data && alert("Sign Up Successful!")
   };
 
   return (
@@ -53,7 +59,7 @@ const SignUp = () => {
             />
         </div>
 
-        <button className="styledBt signUpButton">Sign Up</button>
+        <button className="styledBt signUpButton" onClick={handleSignup}>Sign Up</button>
         <button className="unstyledBt"
         onClick={
           function(){

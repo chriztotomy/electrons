@@ -1,14 +1,32 @@
 
 import React, { useState } from "react";
 import "./login.css";
+import { createClient } from '@supabase/supabase-js'
+const supabase = createClient('https://nutlagdufpfpezhovzqy.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im51dGxhZ2R1ZnBmcGV6aG92enF5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTk2MjQ2MTYsImV4cCI6MjAxNTIwMDYxNn0.ORhkozAiS7rfmuqgvyCOTREFwYTydOwQBolszpSg3ss')
+
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
     // handle login logic here
-    console.log(email,password)
+    const { data, error } = await supabase.auth.signInWithPassword({
+      email: email,
+      password: password
+    })
+    //on successful login set the data to local storage
+    if (data) {
+      if(localStorage.getItem("user") !== null){
+        localStorage.clear();
+        localStorage.setItem("user", JSON.stringify(data))
+      }else{
+        localStorage.setItem("user", JSON.stringify(data))
+      }
+      window.location.href = '/';
+    }
+
+
   };
 
   return ( 
